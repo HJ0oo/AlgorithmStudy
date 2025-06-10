@@ -1,2 +1,2 @@
 # algo
-가보자고
+let's start!
