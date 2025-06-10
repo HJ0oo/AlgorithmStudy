@@ -1,2 +1,2 @@
-﻿# algo
+# algo
 recently updated really really
