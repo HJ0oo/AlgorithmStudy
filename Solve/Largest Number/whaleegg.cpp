@@ -28,6 +28,6 @@ string solution(vector<int> numbers) {
 
     //주어진 모든 수가 0인 경우를 마지막에 고려한다면?
     //answer[0]는 char 타입, "0"은 C-스타일 문자열 리터럴 (정확히는 const char* 타입)이므로 직접 비교할 수 없음
-    //return (answer[0] == '0') ? "0" : answer;
+    // return (answer[0] == '0') ? "0" : answer;
     return answer;
 }
