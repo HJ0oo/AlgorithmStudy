@@ -1,4 +1,4 @@
-#include <string>
+ï»¿#include <string>
 #include <vector>
 #include <algorithm>
 
@@ -11,14 +11,14 @@ bool compare(string a, string b) {
 string solution(vector<int> numbers) {
     vector<string> str_numbers{};
     for (int i = 0; i < numbers.size(); ++i) {
-        //(string)numberÀº Æ²¸° ¹®¹ı. ±âº» ÀÚ·áÇü, Æ÷ÀÎÅÍ Å¸ÀÔ°£ °¡´É
+        //(string)numberì€ í‹€ë¦° ë¬¸ë²•. ê¸°ë³¸ ìë£Œí˜•, í¬ì¸í„° íƒ€ì…ê°„ ê°€ëŠ¥
         str_numbers.push_back(to_string(numbers[i]));
     }
 
     //sort(str_numbers.begin(), str_numbers.end(), [](string a, string b) {return a+b > b+a;});
     sort(str_numbers.begin(), str_numbers.end(), compare);
 
-    //answer ¸¸µé±â Àü¿¡ ºü¸£°Ô ºüÁ®³ª°¡µµ·Ï ¾Õ¿¡¼­ ÆÇ´Ü
+    //answer ë§Œë“¤ê¸° ì „ì— ë¹ ë¥´ê²Œ ë¹ ì ¸ë‚˜ê°€ë„ë¡ ì•ì—ì„œ íŒë‹¨
     if (str_numbers[0] == "0") return "0";
 
     string answer = "";
@@ -26,8 +26,8 @@ string solution(vector<int> numbers) {
         answer += S;
     }
 
-    //ÁÖ¾îÁø ¸ğµç ¼ö°¡ 0ÀÎ °æ¿ì¸¦ ¸¶Áö¸·¿¡ °í·ÁÇÑ´Ù¸é?
-    //answer[0]´Â char Å¸ÀÔ, "0"Àº C-½ºÅ¸ÀÏ ¹®ÀÚ¿­ ¸®ÅÍ·² (Á¤È®È÷´Â const char* Å¸ÀÔ)ÀÌ¹Ç·Î Á÷Á¢ ºñ±³ÇÒ ¼ö ¾øÀ½
+    //ì£¼ì–´ì§„ ëª¨ë“  ìˆ˜ê°€ 0ì¸ ê²½ìš°ë¥¼ ë§ˆì§€ë§‰ì— ê³ ë ¤í•œë‹¤ë©´?
+    //answer[0]ëŠ” char íƒ€ì…, "0"ì€ C-ìŠ¤íƒ€ì¼ ë¬¸ìì—´ ë¦¬í„°ëŸ´ (ì •í™•íˆëŠ” const char* íƒ€ì…)ì´ë¯€ë¡œ ì§ì ‘ ë¹„êµí•  ìˆ˜ ì—†ìŒ
     //return (answer[0] == '0') ? "0" : answer;
     return answer;
 }
