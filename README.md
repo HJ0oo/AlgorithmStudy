@@ -1,3 +1,87 @@
-# algo
-recently updated really really
-updated
+﻿🚀 Algorithm Study (알고리즘 스터디)
+본 레포지토리는 꾸준한 알고리즘 문제 풀이와 코드 리뷰를 통해 함께 성장하는 것을 목표로 하는 스터디 그룹의 협업 공간입니다.
+
+🎯 우리의 목표
+일관성: 정해진 규칙에 따라 꾸준히 문제를 해결합니다.
+코드 품질: 서로의 코드를 리뷰하며 더 나은 코드를 작성하는 방법을 배웁니다.
+지식 공유: 다양한 문제 해결 방식을 접하고 토론하며 문제 해결 능력을 향상시킵니다.
+📌 핵심 원칙 (Ground Rules)
+프로젝트의 일관성을 유지하기 위해 아래 규칙을 반드시 지켜주세요.
+
+1. 파일 구조 (Directory Structure)
+문제는 아래와 같은 폴더 구조로 관리합니다. 본인의 GitHub 아이디로 폴더를 생성하여 코드를 관리합니다.
+
+.
+├── 문제유형 (ex: 해시, 정렬)
+│   ├── 문제이름 (ex: 완주하지 못한 선수)
+│   │   ├── 아이디1.js
+│   │   └── 아이디2.py
+│   └── 다른문제
+│       ├── 아이디1.java
+│       └── 아이디2.cpp
+└── README.md
+예시: 해시 유형의 완주하지 못한 선수 문제를 HJ0oo가 풀었을 경우
+해시/완주하지 못한 선수/HJ0oo.js
+2. 커밋 메시지 (Commit Message Convention)
+커밋 메시지는 어떤 문제를 누가 풀었는지 명확하게 알 수 있도록 아래 양식을 따릅니다.
+
+양식: [문제출처] 문제이름 / 해결자이름
+예시:
+[프로그래머스] 완주하지 못한 선수 / HJ0oo
+[백준] 1000번 A+B / HJ0oo
+3. 문제 해결 주기
+주 최소 3문제 이상 푸는 것을 목표로 합니다.
+문제 해결 후 **반드시 Pull Request(PR)**를 생성하여 코드 리뷰를 요청합니다.
+💻 협업 절차 (Workflow)
+스터디는 다음 절차에 따라 진행됩니다.
+
+저장소 복제 (Clone): 로컬에 개인 작업 공간을 만듭니다.
+
+Bash
+
+git clone https://github.com/HJ0oo/AlgorithmStudy.git
+cd AlgorithmStudy
+브랜치 생성 (Create a Branch): 문제 풀이를 시작하기 전, 기능 브랜치를 생성합니다.
+
+브랜치 이름: solve/문제이름-아이디
+예시: git checkout -b solve/완주하지못한선수-HJ0oo
+문제 풀이 및 커밋 (Solve & Commit): 문제를 해결하고 정해진 양식에 따라 커밋합니다.
+
+Bash
+
+# 코드 작성 후
+git add .
+git commit -m "[프로그래머스] 완주하지 못한 선수 / HJ0oo"
+푸시 (Push): 원격 저장소에 브랜치를 푸시합니다.
+
+Bash
+
+git push origin solve/완주하지못한선수-HJ0oo
+풀 리퀘스트 생성 (Create a Pull Request):
+
+GitHub 레포지토리에서 Pull Request 버튼을 클릭합니다.
+base: main ← compare: solve/내-브랜치 로 설정하고 PR을 생성합니다.
+다른 팀원에게 코드 리뷰를 요청합니다.
+코드 리뷰 및 병합 (Review & Merge):
+
+리뷰어는 코드에 대한 피드백을 남깁니다.
+**최소 1명 이상의 승인(Approve)**을 받으면 PR을 main 브랜치에 병합할 수 있습니다.
+병합 후에는 사용했던 브랜치를 삭제하여 저장소를 깔끔하게 유지합니다.
+동기화 (Sync): 새로운 문제 풀이를 시작하기 전, main 브랜치의 최신 변경사항을 로컬에 반영합니다.
+
+Bash
+
+git checkout main
+git pull origin main
+📚 문제 풀이 순서
+스터디는 아래 순서대로 문제 유형을 정복해 나갑니다.
+
+정렬
+해시
+완전탐색, DFS/BFS
+스택/큐, 힙
+탐욕법(Greedy), 다이나믹 프로그래밍(DP)
+이분탐색, 그래프
+👨‍👩‍👧‍👦 참여 인원 (Collaborators)
+@HJ0oo
+@팀원_아이디_추가
