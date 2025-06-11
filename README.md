@@ -19,16 +19,17 @@
 문제는 아래와 같은 폴더 구조로 관리합니다. 본인의 GitHub 아이디로 폴더를 생성하여 코드를 관리합니다.
 
 ```mermaid
-mindmap
-  root(.)
-    README.md
-    문제유형 (ex: 해시, 정렬)
-      문제이름 (ex: 완주하지 못한 선수)
-        아이디1.js
-        아이디2.py
-      다른문제
-        아이디1.java
-        아이디2.cpp
+graph TD;
+    A(.) --> B[README.md];
+    A --> C[문제유형 (ex: 해시, 정렬)];
+    C --> D[문제이름 (ex: 완주하지 못한 선수)];
+    C --> G[다른문제];
+    D --> E[아이디1.js];
+    D --> F[아이디2.py];
+    G --> H[아이디1.java];
+    G --> I[아이디2.cpp];
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
 
