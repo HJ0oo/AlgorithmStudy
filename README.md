@@ -61,24 +61,24 @@
     ```
 
 2.  **브랜치 생성 (Create a Branch)**: 문제 풀이를 시작하기 전, 기능 브랜치를 생성합니다.
-    * **브랜치 이름**: `solve/문제이름-아이디`
-    * **예시**: `git checkout -b solve/완주하지못한선수-HJ0oo`
+    * **브랜치 이름**: `아이디`
+    * **예시**: `git checkout -b HJ0oo`
 
 3.  **문제 풀이 및 커밋 (Solve & Commit)**: 문제를 해결하고 정해진 양식에 따라 커밋합니다.
     ```bash
     # 코드 작성 후
     git add .
-    git commit -m "[프로그래머스] 완주하지 못한 선수 / HJ0oo"
+    git commit -m "[프로그래머스] 가장 큰 수"
     ```
 
 4.  **푸시 (Push)**: 원격 저장소에 브랜치를 푸시합니다.
     ```bash
-    git push origin solve/완주하지못한선수-HJ0oo
+    git push origin HJ0oo
     ```
 
 5.  **풀 리퀘스트 생성 (Create a Pull Request)**:
     * GitHub 레포지토리에서 `Pull Request` 버튼을 클릭합니다.
-    * `base: main` ← `compare: solve/내-브랜치` 로 설정하고 PR을 생성합니다.
+    * `base: main` ← `compare: 내-브랜치` 로 설정하고 PR을 생성합니다.
     * 다른 팀원에게 코드 리뷰를 요청합니다.
 
 6.  **코드 리뷰 및 병합 (Review & Merge)**:
@@ -98,6 +98,7 @@
 
 스터디는 아래 순서대로 문제 유형을 정복해 나갑니다.
 
+### Session 1. 프로그래머스 코딩테스트 고득점 Kit
 1.  **정렬**
 2.  **해시**
 3.  **완전탐색, DFS/BFS**
@@ -108,6 +109,13 @@
 ***
 
 ## 👨‍👩‍👧‍👦 참여 인원 (Collaborators)
-
-* [@HJ0oo](https://github.com/HJ0oo)
-* `@팀원_아이디_추가`
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/HJ0oo"><img src="https://avatars.githubusercontent.com/HJ0oo" width="100px;" alt=""/><br /><sub><b>
+임현주</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/whaleegg"><img src="https://avatars.githubusercontent.com/whaleegg" width="100px;" alt=""/><br /><sub><b>
+유의민</b></sub></a><br /></td>
+    <!-- <td align="center"><a href="https://github.com/{팀원github아이디}"><img src="https://avatars.githubusercontent.com/{팀원github아이디}" width="100px;" alt=""/><br /><sub><b>
+{팀원이름}</b></sub></a><br /></td>
+  </tr>
+</table>
