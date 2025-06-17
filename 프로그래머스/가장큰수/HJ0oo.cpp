@@ -20,7 +20,7 @@ stoi(answer)에서 abort 발생 : answer에 int 범위를 넘어가지 않는지
     sort(st_numbers.begin(),st_numbers.end(),greater<string>());
     sort(st_numbers.rbegin(),st_numbers.rend());
 
-[시간복잡도] O(N log N) 
+[시간복잡도] O(N log N)
 [공간복잡도] O(N)
 
 [작성일] 2025-06-17
