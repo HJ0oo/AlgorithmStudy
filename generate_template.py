@@ -109,10 +109,11 @@ def main():
 /*
 [문제] {problem_name}
 [작성자] {username}
-[풀이시간] 
 [접근방식] 
 [시간복잡도] 
+[공간복잡도] 
 [작성일] {today}
+[문제링크]
 */
 
 #include <iostream>
